@@ -88,6 +88,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1292003126000313058}
   - component: {fileID: 1292003125987461902}
+  - component: {fileID: 8975273663955972616}
+  - component: {fileID: 2209288908762548897}
+  - component: {fileID: 1935258095612995269}
+  - component: {fileID: 3475097340426227282}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -128,6 +132,57 @@ CharacterController:
   m_SkinWidth: 0.001
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8975273663955972616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292003126000680642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00e17b01c0efaa34ea4bdd0f4f9ed87d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
+  turnSpeed: 30
+--- !u!114 &2209288908762548897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292003126000680642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6add800ac79d6b54d96c710093457213, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1935258095612995269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292003126000680642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 065c6996fa7e39e40817a5fc50505914, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputScheme: 0
+--- !u!114 &3475097340426227282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292003126000680642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f386db46d7e5a24099745eecdda74d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1292003126000680644
 GameObject:
   m_ObjectHideFlags: 0

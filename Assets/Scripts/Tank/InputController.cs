@@ -52,10 +52,15 @@ public class InputController : MonoBehaviour
 				{
                     motor.Rotate(data.turnSpeed);
 				}
-                else
+               
+                // shooting 
+                if (Input.GetKey(KeyCode.Space))
 				{
-                    motor.Rotate(0);
+                    shooter.Shoot();
 				}
+                    
+
+				
                 break;
             case InputScheme.arrowKeys:
                 break;
