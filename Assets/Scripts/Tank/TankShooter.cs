@@ -7,32 +7,62 @@ public class TankShooter : MonoBehaviour
 {
 
     public GameObject firePoint; // use this point in space for instantiating 
-    public GameObject cannonBallPrefab;
-    private TankData data;   
+    public Rigidbody cannonBallPrefab;
+    private TankData data;
+    public float timerDelay = 1.0f;
+    private float timeUntilNextEvent;
+    public float thrust = 1.0f;
+    
+  
     // Start is called before the first frame update
     void Start()
     {
         data = GetComponent<TankData>();
+
+        timeUntilNextEvent = timerDelay;
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         
+        timeUntilNextEvent -= Time.deltaTime;
+        if (timeUntilNextEvent <= 0)
+		{
+           
+
+            Debug.Log("You may shoot.");
+            timeUntilNextEvent = timerDelay;
+		}
     }
 
-    public void Shoot()
-	{
+	
+	public void Shoot()
+    {
         // check cooldown timer
+        if (timerDelay <= timeUntilNextEvent)
+        {
 
-        //instantiate the cannon ball
-        GameObject firedCannonBall = Instantiate(cannonBallPrefab);
-        //propel  thr cannon ball forward with rigid body.addforce()
+            //instantiate the cannon ball
 
-        // cannon ball needs some data: Who fires it and damage
-        CannonBall cannonBall = firedCannonBall.GetComponent<CannonBall>();
-        cannonBall.attacker = this.gameObject;
-        cannonBall.attackDamage = data.cannonBallDamge;
+            Rigidbody clone = Instantiate(cannonBallPrefab, firePoint.transform);
+            //propel  thr cannon ball forward with rigid body.addforce()
+            clone.velocity = transform.TransformDirection(Vector3.forward * thrust);
+            // cannon ball needs some data: Who fires it and damage
+            CannonBall cannonBall = clone.GetComponent<CannonBall>();
+
+            cannonBall.attacker = this.gameObject;
+
+            cannonBall.attackDamage = data.cannonBallDamge;
+        }
+        
+
+        
+
+		
+        
 	}
 
 

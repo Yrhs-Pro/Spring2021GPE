@@ -53,10 +53,11 @@ public class InputController : MonoBehaviour
                     motor.Rotate(data.turnSpeed);
 				}
                
+               
                 // shooting 
                 if (Input.GetKey(KeyCode.Space))
 				{
-                    shooter.Shoot();
+					shooter.Shoot();
 				}
                     
 

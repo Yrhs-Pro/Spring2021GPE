@@ -12,14 +12,19 @@ public class Health : MonoBehaviour
 	{
         currentHealth -= attackData.attackDamage;
 
+		
         //check if we died
 
         if (currentHealth <= 0)
 		{
-
+			++PointScore.score;
             Die();
+			
 		}
+
+
 	}
+	
 
 	private void Die()
 	{
