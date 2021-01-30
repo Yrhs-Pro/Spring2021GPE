@@ -27,13 +27,14 @@ public class TankShooter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // subtracts time left on timer 
         timeUntilNextEvent -= Time.deltaTime;
         if (timeUntilNextEvent <= 0)
 		{
            
-
+            // spits out a message to the prgrammer when the timer is up.
             Debug.Log("You may shoot.");
+            // resets timer
             timeUntilNextEvent = timerDelay;
 		}
     }

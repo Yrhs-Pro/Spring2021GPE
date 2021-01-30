@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public int currentHealth = 5;
-    public int maxHealth = 5;
+    public int currentHealth = 5; // current health
+    public int maxHealth = 5; // max health
 
     public void TakeDamage(Attack attackData)
 	{
+		// health is subtracted when take damage occurs
         currentHealth -= attackData.attackDamage;
 
 		
@@ -17,7 +18,7 @@ public class Health : MonoBehaviour
 
         if (currentHealth <= 0)
 		{
-			++PointScore.score;
+			++PointScore.score;// points added on enemy tanks death
             Die();
 			
 		}
@@ -28,6 +29,7 @@ public class Health : MonoBehaviour
 
 	private void Die()
 	{
-		throw new NotImplementedException();
+		// destroys the object with this script attached
+		Destroy(this.gameObject);
 	}
 }

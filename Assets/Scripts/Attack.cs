@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Attack 
 {
-    public GameObject attacker;
-    public int attackDamage;
+    public GameObject attacker; // attacker
+    public int attackDamage; // attackdamage 
 
 	public Attack(GameObject Attacker, int Damage)
 	{
-		attackDamage = Damage;
-		attacker = Attacker;
+
+		attackDamage = Damage; // makes the AD equal to Damage
+		attacker = Attacker; // makes attacker equal to new attacker 
 
 	}
 }

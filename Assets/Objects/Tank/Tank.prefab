@@ -425,10 +425,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6add800ac79d6b54d96c710093457213, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoint: {fileID: 0}
-  cannonBallPrefab: {fileID: 0}
-  timerDelay: 1
-  thrust: 1
+  firePoint: {fileID: 7309992}
+  cannonBallPrefab: {fileID: 6800285951099077905, guid: 15b71e04aca63a64c827d34228cb6cdf,
+    type: 3}
+  timerDelay: 0.25
+  thrust: 10
 --- !u!114 &7474698405164263589
 MonoBehaviour:
   m_ObjectHideFlags: 0
