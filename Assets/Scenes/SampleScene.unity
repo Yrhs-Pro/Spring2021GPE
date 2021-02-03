@@ -822,12 +822,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1150543504 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7309992, guid: 65e92f227846e794883569c427a9c4c3,
-    type: 3}
-  m_PrefabInstance: {fileID: 2073020321}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1232700745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -894,11 +888,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tank 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2209288908762548897, guid: 61b9c3a7df0fe2d49926d3d3254f3f92,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b9c3a7df0fe2d49926d3d3254f3f92, type: 3}
@@ -1232,27 +1221,6 @@ PrefabInstance:
     - target: {fileID: 400012, guid: 65e92f227846e794883569c427a9c4c3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6502907445130750513, guid: 65e92f227846e794883569c427a9c4c3,
-        type: 3}
-      propertyPath: cannonBallPrefab
-      value: 
-      objectReference: {fileID: 6800285951099077905, guid: 15b71e04aca63a64c827d34228cb6cdf,
-        type: 3}
-    - target: {fileID: 6502907445130750513, guid: 65e92f227846e794883569c427a9c4c3,
-        type: 3}
-      propertyPath: firePoint
-      value: 
-      objectReference: {fileID: 1150543504}
-    - target: {fileID: 6502907445130750513, guid: 65e92f227846e794883569c427a9c4c3,
-        type: 3}
-      propertyPath: thrust
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6502907445130750513, guid: 65e92f227846e794883569c427a9c4c3,
-        type: 3}
-      propertyPath: timerDelay
-      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e92f227846e794883569c427a9c4c3, type: 3}

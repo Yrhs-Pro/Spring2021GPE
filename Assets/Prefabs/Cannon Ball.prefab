@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 6800285951099077919}
   - component: {fileID: 6800285951099077918}
   - component: {fileID: 6800285951099077905}
+  - component: {fileID: 3341218754924336138}
   m_Layer: 0
-  m_Name: Canon ball
+  m_Name: Cannon Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -109,3 +110,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3341218754924336138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6800285951099077904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d2a02e99ed5bf478fa8f9aa3b2d6c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attacker: {fileID: 0}
+  attackDamage: 0

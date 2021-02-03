@@ -10,7 +10,7 @@ public class PointScore : MonoBehaviour
     // Start is called before the first frame update
     void OnGUI()
     {
-        GUI.Label(new Rect(10, 10, 100, 20), "Your Score " + enemyScore);
-        GUI.Label(new Rect(10, 30, 100, 20), "Enemy Score " + score);
+        GUI.Label(new Rect(10, 10, 100, 20), "Your Score " + score);
+        GUI.Label(new Rect(10, 30, 100, 20), "Enemy Score " + enemyScore);
     }
 }

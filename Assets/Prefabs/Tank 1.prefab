@@ -163,7 +163,7 @@ MonoBehaviour:
   firePoint: {fileID: 6237015956917502658}
   cannonBallPrefab: {fileID: 6800285951099077905, guid: 15b71e04aca63a64c827d34228cb6cdf,
     type: 3}
-  timerDelay: 0.1
+  timerDelay: 1
   thrust: 10
 --- !u!114 &6949690314010767682
 MonoBehaviour:
