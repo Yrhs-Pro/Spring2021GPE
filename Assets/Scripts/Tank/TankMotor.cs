@@ -27,7 +27,7 @@ public class TankMotor : MonoBehaviour
 		// Call SimpleMove() and send it our vector
 		// Note that SimpleMove() will apply Time.deltaTime, and convert to meters per second for us!
 		characterController.SimpleMove(speedVector);
-
+		
 	}
 
 
@@ -51,4 +51,28 @@ public class TankMotor : MonoBehaviour
 		// Now, rotate our tank by this value - we want to rotate in our local space (not in world space).
 		transform.Rotate(rotateVector, Space.Self);
 	}
+
+
+
+	public bool RotateTowards(Vector3 target, float rotateSpeed)
+	{
+		Vector3 adjustedTarget = new Vector3(target.x, transform.position.y, target.z);
+		Vector3 vectorToTarget = adjustedTarget - transform.position;
+		Quaternion targetRotation = Quaternion.LookRotation(vectorToTarget);
+		
+		if (targetRotation == transform.rotation)
+		{
+			return false;
+
+		}
+
+		transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotateSpeed * Time.deltaTime);
+		
+
+		return true;
+		
+	}
+
+
+
 }

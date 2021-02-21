@@ -91,7 +91,8 @@ GameObject:
   - component: {fileID: 8975273663955972616}
   - component: {fileID: 2209288908762548897}
   - component: {fileID: 6949690314010767682}
-  - component: {fileID: 1079443775171787023}
+  - component: {fileID: 666842619262249127}
+  - component: {fileID: 6537556270136636220}
   m_Layer: 0
   m_Name: Tank 1
   m_TagString: Untagged
@@ -179,7 +180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 5
   maxHealth: 5
---- !u!114 &1079443775171787023
+--- !u!114 &666842619262249127
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,9 +189,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1292003126000680642}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d13bf3d32342254c89df4e4f2071a22, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f386db46d7e5a24099745eecdda74d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6537556270136636220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292003126000680642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a326f8cf34427524282ae0cba1faa275, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fleeDistance: 1
+  closeEnough: 4
+  attackState: 0
+  avoidanceStage: 0
+  avoidanceTime: 2
 --- !u!1 &1292003126000680644
 GameObject:
   m_ObjectHideFlags: 0
