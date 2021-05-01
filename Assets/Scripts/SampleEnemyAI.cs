@@ -22,7 +22,7 @@ public class SampleEnemyAI : MonoBehaviour
 	private TankShooter shooter;
 	private Health health;
 
-
+	
 	public float fleeDistance = 1f;
 	public float closeEnough = 4f;
 	public enum AtackState { Chase, Flee };
@@ -50,6 +50,8 @@ public class SampleEnemyAI : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+		
+
 		if (attackState == AtackState.Chase)
 		{
 			if (avoidanceStage != AvoidanceStage.NotAvoiding)
@@ -61,7 +63,7 @@ public class SampleEnemyAI : MonoBehaviour
 			else
 			{
 				Chase(GameManager.Instance.Players[0]);
-				if (health.currentHealth < 3)
+				if (health.CurrentHealth < 3)
 				{
 					attackState = AtackState.Flee;
 				}
@@ -77,7 +79,7 @@ public class SampleEnemyAI : MonoBehaviour
 			else
 			{
 				Flee(GameManager.Instance.Players[0]);
-				if (health.currentHealth >= 3)
+				if (health.CurrentHealth >= 3)
 				{
 					attackState = AtackState.Chase;
 				}
@@ -208,4 +210,6 @@ public class SampleEnemyAI : MonoBehaviour
 		return true;
 
 	}
+
+	
 }
