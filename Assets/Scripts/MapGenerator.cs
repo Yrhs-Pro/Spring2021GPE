@@ -16,8 +16,7 @@ public class MapGenerator : MonoBehaviour
 
     private Room[,] grid;
 
-    public enum MapGenerationtype { Random, MapOfTheDay, CustomSeed};
-    public MapGenerationtype mapType = MapGenerationtype.Random;
+    
 
 
     private void Start()
@@ -34,15 +33,15 @@ public class MapGenerator : MonoBehaviour
 
     public void GenerateGrid()
 	{
-        switch (mapType)
+        switch (GameManager.Instance.mapType)
 		{
-            case MapGenerationtype.Random:
+            case GameManager.MapGenerationtype.Random:
                 mapSeed = DateToInt(DateTime.Now);
                 break;
-            case MapGenerationtype.MapOfTheDay:
+            case GameManager.MapGenerationtype.MapOfTheDay:
                 mapSeed = DateToInt(DateTime.Now.Date);
                 break;
-            case MapGenerationtype.CustomSeed:
+            case GameManager.MapGenerationtype.CustomSeed:
                 break;
 		}
         UnityEngine.Random.InitState(mapSeed);
