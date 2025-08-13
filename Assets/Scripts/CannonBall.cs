@@ -16,8 +16,9 @@ public class CannonBall : MonoBehaviour
 
         collision.gameObject.SendMessage("TakeDamage", attackData, SendMessageOptions.DontRequireReceiver);
 
-        // destroy cannonball when it runs into another object 
+        // destroy object
         Destroy(this.gameObject);
     }
 
 }
+
